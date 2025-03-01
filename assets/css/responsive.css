@@ -1,0 +1,145 @@
+@media (max-width: 1184px) {
+  /* HEADER */
+  header .hidden-phone span {
+    display: none;
+  }
+
+  header div:last-child span {
+    display: none;
+  }
+
+  /* MAIN */
+  .navigation {
+    flex-wrap: wrap;
+  }
+
+  .navigation > div {
+    width: calc(25% - 7.5px);
+  }
+
+  .pictures {
+    height: 400px;
+  }
+
+  .pictures .col-1 {
+    flex: 2;
+  }
+  .pictures .col-2 {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+  }
+}
+@media (max-width: 1024px) {
+  /* MAIN */
+
+  .description {
+    display: inherit;
+  }
+  .description .col-1 {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .description .col-1 p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .description .col-2 {
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+    margin-left: 0;
+  }
+  .description .col-2 > div:first-child {
+    width: 50%;
+    border-radius: 0;
+  }
+
+  .description .col-2 > div:last-child {
+    width: 50%;
+    border-radius: 0;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  /* BASE RULES */
+
+  h1 {
+    font-size: 32px;
+    line-height: 58px;
+  }
+  .hidden-phone {
+    display: none;
+  }
+
+  /* HEADER */
+  header .hidden-phone {
+    display: none;
+  }
+  .hidden-desck {
+    display: inherit;
+  }
+
+  header img {
+    width: 158px;
+  }
+
+  /* MAIN */
+
+  .navigation {
+    flex-wrap: nowrap;
+    overflow: scroll;
+    scrollbar-width: none;
+  }
+  .navigation div {
+    display: flex;
+    justify-content: center;
+    flex: inherit;
+    gap: 10px;
+    width: fit-content;
+    flex-shrink: 0;
+  }
+  .col-2.hidden-phone,
+  .menu div {
+    display: none;
+  }
+  .pictures {
+    margin: 0 -20px;
+  }
+
+  .description .col-1 {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .description .col-1 p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .description .col-2 {
+    display: inherit;
+  }
+
+  .description .col-2 > div:first-child {
+    width: 100%;
+  }
+
+  .description .col-2 > div:last-child {
+    height: 200px;
+    width: 100%;
+  }
+
+  .section-1 > .lign-1 {
+    display: inherit;
+  }
+  .section-1 > .lign-1 .col-1 {
+    margin-bottom: 25px;
+  }
+  .section-1 > .lign-1 > .col-2 .fig-col,
+  .section-2 .lign-1 .col {
+    width: calc((100% - 30px) / 1.5);
+  }
+}
